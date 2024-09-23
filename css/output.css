@@ -2124,6 +2124,10 @@ body .select2-container--open .select2-selection__arrow svg {
     margin-right: 0px;
   }
 
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -2316,16 +2320,16 @@ body .select2-container--open .select2-selection__arrow svg {
     padding-top: 0px;
   }
 
+  .lg\:pt-10{
+    padding-top: 2.5rem;
+  }
+
   .lg\:pt-24{
     padding-top: 6rem;
   }
 
   .lg\:pt-8{
     padding-top: 2rem;
-  }
-
-  .lg\:pt-10{
-    padding-top: 2.5rem;
   }
 
   .lg\:text-left{
