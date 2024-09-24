@@ -178,3 +178,9 @@ $(".accordion-header").on("click", function (e) {
   $this.next().slideToggle();
 });
 //END
+
+//popup
+
+$(".mapImgPopup").magnificPopup({
+  type: "image",
+});

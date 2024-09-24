@@ -776,6 +776,10 @@ p,
   height: 50px;
 }
 
+.h-\[515px\]{
+  height: 515px;
+}
+
 .h-\[672px\]{
   height: 672px;
 }
@@ -1279,6 +1283,10 @@ p,
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[5rem\]{
+  font-size: 5rem;
 }
 
 .font-light{
@@ -2175,6 +2183,10 @@ body .select2-container--open .select2-selection__arrow svg {
 
   .md\:text-\[9\.5rem\]{
     font-size: 9.5rem;
+  }
+
+  .md\:text-\[5rem\]{
+    font-size: 5rem;
   }
 
   .md\:leading-44{
