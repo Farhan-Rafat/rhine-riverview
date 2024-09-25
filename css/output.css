@@ -1270,6 +1270,10 @@ p,
   font-size: 2rem;
 }
 
+.text-\[5rem\]{
+  font-size: 5rem;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1283,10 +1287,6 @@ p,
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[5rem\]{
-  font-size: 5rem;
 }
 
 .font-light{
@@ -1598,6 +1598,19 @@ section + .fullVideoBlock {
 
 header {
   transition: all 0.3s ease-in-out;
+}
+
+header.header-sticky {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  background-color: gray;
+}
+
+header.header-sticky.header-show {
+  top: 0;
 }
 
 body.nav-expanded header{
@@ -2183,10 +2196,6 @@ body .select2-container--open .select2-selection__arrow svg {
 
   .md\:text-\[9\.5rem\]{
     font-size: 9.5rem;
-  }
-
-  .md\:text-\[5rem\]{
-    font-size: 5rem;
   }
 
   .md\:leading-44{

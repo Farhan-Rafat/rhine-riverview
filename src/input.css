@@ -41,6 +41,17 @@
 header {
   transition: all 0.3s ease-in-out;
 }
+header.header-sticky {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  background-color: gray;
+}
+header.header-sticky.header-show {
+  top: 0;
+}
 
 body.nav-expanded header {
   @apply bg-white;
