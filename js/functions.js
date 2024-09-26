@@ -184,3 +184,15 @@ $(".accordion-header").on("click", function (e) {
 $(".mapImgPopup").magnificPopup({
   type: "image",
 });
+
+//newsletter popup
+
+$(".ShowNewsletterPopup").on("click", function (e) {
+  e.preventDefault();
+  $(".newsletter__popup").addClass("popUp-show");
+});
+
+// Close the popup
+$(".close_newsletterPopup").on("click", function () {
+  $(".newsletter__popup").removeClass("popUp-show");
+});

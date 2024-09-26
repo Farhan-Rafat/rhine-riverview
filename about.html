@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | RiverView</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
     <link rel="stylesheet" href="css/output.css" />
   </head>
@@ -23,7 +24,7 @@
             <li><a href="weddings.html">Weddings</a></li>
             <li><a href="meetings-and-events.html">Meetings & Events</a></li>
             <li><a href="stay.html">Stay</a></li>
-            <li><a href="sign-up.html">Sign Up</a></li>
+            <li class="ShowNewsletterPopup"><a href="#">Sign Up</a></li>
           </ul>
         </div>
 
@@ -1516,7 +1517,117 @@
       </div>
     </footer>
 
+    <div
+      class="newsletter__popup fixed inset-0 w-full h-full z-0 hidden items-center justify-center opacity-0"
+    >
+      <span
+        class="close_newsletterPopup absolute h-full w-full left-0 top-0 bg-black opacity-70 z-0"
+      ></span>
+
+      <div
+        class="newsletterPopup relative z-10 bg-white p-8 md:p-16 w-full max-w-4xl h-full max-h-[37rem] flex flex-col items-center justify-center"
+      >
+        <span
+          class="close_newsletterPopup absolute top-4 right-4 cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <rect
+              opacity="0.6"
+              x="17.7207"
+              y="1.42871"
+              width="2.14286"
+              height="23.0421"
+              rx="1.07143"
+              transform="rotate(45 17.7207 1.42871)"
+              fill="black"
+            ></rect>
+            <rect
+              opacity="0.6"
+              width="2.14286"
+              height="23.4249"
+              rx="1.07143"
+              transform="matrix(-0.707107 0.707107 0.707107 0.707107 3.43457 1.42871)"
+              fill="black"
+            ></rect>
+          </svg>
+        </span>
+
+        <h2 class="max-w-80 text-center">GET ON THE LIST</h2>
+
+        <div
+          class="[&amp;>p]:pt-6 [&amp;>p]:text-base [&amp;>p]:text-black/50 [&amp;>p]:font-normal [&amp;>p]:leading-6 [&amp;>p]:max-w-xl [&amp;>p]:text-center"
+        >
+          <p>Sign Up for Insider Access to Events, Offers and Dining!</p>
+        </div>
+
+        <form
+          method="post"
+          action="https://www.pages03.net/kesslercollection/PRDHotelWebform/Signup"
+          class="w-full max-w-xl flex flex-col items-center gap-5 mt-9"
+        >
+          <input
+            type="text"
+            name="First Name"
+            id="control_COLUMN3"
+            placeholder="First Name*"
+          />
+          <input
+            type="text"
+            name="Last Name"
+            id="control_COLUMN4"
+            placeholder="Last Name*"
+          />
+          <input
+            type="email"
+            name="Email"
+            id="control_EMAIL"
+            placeholder="Email Address*"
+          />
+          <input
+            type="number"
+            name="Postal Code"
+            id="control_COLUMN8"
+            placeholder="ZIP/POSTAL CODE"
+          />
+          <input
+            type="date"
+            id="container_COLUMN13"
+            placeholder="ZIP/POSTAL CODE"
+          />
+          <button type="submit" value="Submit" class="button group mt-8">
+            <span>Subscribe</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+            >
+              <path
+                opacity="0.5"
+                d="M2.66732 8C2.53471 8 2.40753 8.05268 2.31376 8.14645C2.22 8.24021 2.16732 8.36739 2.16732 8.5C2.16732 8.63261 2.22 8.75978 2.31376 8.85355C2.40753 8.94732 2.53471 9 2.66732 9L2.66732 8ZM2.66732 9L13.334 9L13.334 8L2.66732 8L2.66732 9Z"
+                fill="black"
+              ></path>
+              <path
+                d="M9.33398 12.5L13.334 8.5L9.33398 4.5"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
     <script src="js/jQuery.js"></script>
+    <script src="js/magnigic-popup.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jarallax.min.js"></script>
     <script src="js/select2.min.js"></script>

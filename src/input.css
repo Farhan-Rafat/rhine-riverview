@@ -60,6 +60,9 @@ body.nav-expanded .siteLogo svg *,
 body.nav-expanded .searchBtn svg * {
   fill: black;
 }
+body.nav-expanded .siteLogo {
+  background-color: black;
+}
 
 body.nav-expanded .top--menu > li > a,
 body.nav-expanded .main--menu > li > a {
@@ -92,11 +95,6 @@ body.nav-expanded .toggleNav i:nth-child(3) {
 
 body.nav-expanded .main--menu > li > a::after {
   @apply bg-black;
-}
-
-.floating-header .siteLogo svg *,
-.floating-header .searchBtn svg * {
-  @apply fill-white;
 }
 
 .floating-header .main--menu > li > a::after {
@@ -349,28 +347,31 @@ body .select2-container--open .select2-selection__arrow svg {
   transform: rotate(180deg);
 } */
 
+.newsletter__popup.popUp-show {
+  display: flex;
+  opacity: 1;
+  z-index: 9991;
+}
+
+.newsletterPopup input[type="text"],
 .newsletterPopup input[type="email"],
-.newsletterPopup input[type="text"] {
+.newsletterPopup input[type="number"],
+.newsletterPopup input[type="date"] {
   height: auto;
   width: 100%;
   flex: 1 1 0%;
   border-radius: 0;
+  outline: none;
   border-width: 1px;
   border-color: #f4f4f480;
   background-color: #f4f4f480;
   padding: 1rem 2rem 0.875rem 1.25rem;
   font-family: nunito, sans-serif;
   font-size: 1rem;
-  outline: none;
   line-height: 1.5rem;
   font-weight: 400;
   line-height: 100%;
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  opacity: 1;
 }
 
 .accordion-header:after,
