@@ -2302,6 +2302,18 @@ body .select2-container--open .select2-selection__arrow svg {
     font-size: 9.5rem;
   }
 
+  .md\:text-\[8\.5rem\]{
+    font-size: 8.5rem;
+  }
+
+  .md\:text-\[7\.5rem\]{
+    font-size: 7.5rem;
+  }
+
+  .md\:text-\[6\.75rem\]{
+    font-size: 6.75rem;
+  }
+
   .md\:leading-44{
     line-height: 2.75rem;
   }
